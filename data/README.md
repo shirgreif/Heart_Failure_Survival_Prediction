@@ -1,6 +1,6 @@
 # Data
 
-`heart_failure_clinical_records_dataset.csv` — public **Heart failure clinical records** dataset (299 patients, Faisalabad, 2015).
+`heart_failure_clinical_records_dataset.csv` - public **Heart failure clinical records** dataset (299 patients, Faisalabad, 2015).
 
 **Source:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/519/heart-failure-clinical-records)
 

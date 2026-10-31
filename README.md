@@ -1,7 +1,7 @@
 # Heart Failure Survival Prediction
 
 Academic project for **Selected Topics in Statistics**, Ben-Gurion University of the Negev (March 2024).  
-Predict post–heart-failure mortality from clinical records and rank risk factors by importance.
+Predict post-heart-failure mortality from clinical records and rank risk factors by importance.
 
 **Course lecturer:** Prof. Yisrael Parmet  
 **Team:** Sivan Raviv, Avital Finanser (with Shir Greif)
@@ -42,7 +42,7 @@ Using electronic medical records from **299 heart-failure patients** (2015), we:
 | Item | Detail |
 |------|--------|
 | Patients | 299 (105 women, 194 men), age > 40 |
-| Target | `DEATH_EVENT` — ~32% death / ~68% survival (imbalanced) |
+| Target | `DEATH_EVENT` - ~32% death / ~68% survival (imbalanced) |
 | Features | Age, anaemia, CPK, diabetes, ejection fraction, blood pressure, platelets, serum creatinine, serum sodium, sex, smoking, time |
 
 Source & citation: [`data/README.md`](data/README.md).
@@ -51,7 +51,7 @@ Source & citation: [`data/README.md`](data/README.md).
 
 ## Method
 
-**Preprocessing:** missing/duplicate checks; conservative **3×IQR** outlier rule; **VIF** multicollinearity screen; Min–Max scaling; **80/20** train–test split.
+**Preprocessing:** missing/duplicate checks; conservative **3×IQR** outlier rule; **VIF** multicollinearity screen; Min-Max scaling; **80/20** train-test split.
 
 **Metrics (imbalanced data):** AUC-ROC, **F2** (β = 2), **MCC**. Final choice used their average.
 
@@ -82,7 +82,7 @@ python Heart_failure.py
 ```
 
 ### R (`src/GLM_Model.R`)
-Binomial logistic regression / GLM analysis. Requires prepared CSVs (`prepared_data.csv`, `df_train.csv`, `df_test.csv`) in the working directory — install packages listed at the top of the script, then:
+Binomial logistic regression / GLM analysis. Requires prepared CSVs (`prepared_data.csv`, `df_train.csv`, `df_test.csv`) in the working directory - install packages listed at the top of the script, then:
 
 ```r
 source("GLM_Model.R")
